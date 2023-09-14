@@ -1,0 +1,1 @@
+{"version":3,"names":["event"],"sources":["identify.ts"],"sourcesContent":["import type { IdentifyEventType, UserTraits } from '@segment/analytics-react-native';\n\nexport default (event: IdentifyEventType) => {};\n"],"mappings":"AAEA,gBAAgBA,KAAD,IAA8B,CAAE,CAA/C"}

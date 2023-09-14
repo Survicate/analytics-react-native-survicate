@@ -1,0 +1,1 @@
+{"version":3,"names":["event"],"sources":["screen.ts"],"sourcesContent":["import type { ScreenEventType } from '@segment/analytics-react-native';\n\nexport default async (event: ScreenEventType) => {};\n"],"mappings":";;;;;;;eAEe,MAAOA,KAAP,IAAkC,CAAE,C"}

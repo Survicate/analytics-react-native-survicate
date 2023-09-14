@@ -1,0 +1,1 @@
+{"version":3,"names":["event"],"sources":["track.ts"],"sourcesContent":["import type { TrackEventType } from '@segment/analytics-react-native';\n\nexport default async (event: TrackEventType) => {};\n"],"mappings":";;;;;;;eAEe,MAAOA,KAAP,IAAiC,CAAE,C"}
