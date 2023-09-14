@@ -17,8 +17,6 @@ export class SurvicatePlugin extends DestinationPlugin {
   type = PluginType.destination;
   key = 'Survicate';
 
-  private hasInitialized: boolean = false;
-
   update(settings: SegmentAPISettings, _: UpdateType) {}
 
   identify(event: IdentifyEventType) {
