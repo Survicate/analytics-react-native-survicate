@@ -79,3 +79,7 @@ In the SurvicateDestination plugin, the track method from Segment is used as the
 ***screen***
 
 Similarly, the screen method from Segment is used as the enterScreen method in Survicate. This means that when you track a screen in Segment, it will be entered in Survicate.
+
+***reset***
+
+The reset method from Segment is used as the reset method in Survicate. This means that when you reset the Segment client, the Survicate client will also be reset.
