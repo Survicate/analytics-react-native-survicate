@@ -1,7 +1,7 @@
 {
-  "name": "@sprig-technologies/analytics-react-native-plugin-sprig",
-  "version": "0.2.3",
-  "description": "The hassle-free way to add Segment analytics Sprig plugin to your React-Native app.",
+  "name": "@survicate/analytics-react-native-survicate",
+  "version": "0.0.1",
+  "description": "The hassle-free way to add Segment analytics Survicate plugin to your React-Native app.",
   "main": "lib/commonjs/index.js",
   "scripts": {
     "build": "bob build",
@@ -34,19 +34,17 @@
     "package.json",
     "!src/**/*.e2e.mock.js"
   ],
-  "author": "Sprig Technologies <dev@sprig.com> (https://sprig.com/)",
+  "author": "Survicate <hello@survicate.com> (https://survicate.com/)",
   "license": "see LICENSE",
   "bugs": {
-    "url": "https://github.com/UserLeap/analytics-react-native-plugin-sprig/issues"
+    "url": "https://survicate.com"
   },
-  "homepage": "https://github.com/UserLeap/analytics-react-native-plugin-sprig#readme",
+  "homepage": "https://survicate.com",
   "peerDependencies": {
-    "@segment/analytics-react-native": "*"
+    "@segment/analytics-react-native": "*",
+    "@survicate/react-native-survicate": "^3.0.3"
   },
-  "dependencies": {
-    "@survicate/react-native-survicate": "^3.0.3",
-    "react-native-userleap": "2.14.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",

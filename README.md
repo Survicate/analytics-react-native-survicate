@@ -1,52 +1,81 @@
-# @segment/analytics-react-native-plugin-sprig
+# @segment/analytics-react-native-survicate
 
-`DestinationPlugin` for [Sprig](https://www.sprig.com). This is a segment analytics plugin that wraps [`react-native-userleap`](https://www.npmjs.com/package/react-native-userleap).
-
-## Prerequisite
-
-Please make sure that your product currently uses segment analytics in your application. 
-If you do not currently, but want to get started, please checkout [Segment's documentation](https://segment.com/docs/connections/sources/catalog/libraries/mobile/react-native/#plugin-architecture). Or follow Segment's [instructions on github](https://github.com/segmentio/analytics-react-native#installation).
+`SurvicatePlugin` for [Survicate](https://survicate.com/). Wraps [`react-native-survicate`](https://github.com/survicate/react-native-survicate).
 
 ## Installation
 
-You need to install the `@sprig-technologies/analytics-react-native-plugin-sprig` and the `react-native-userleap` dependency.
+You need to install the `@segment/analytics-react-native-survicate` and the `react-native-survicate` dependency.
+
+Using NPM:
 ```bash
-yarn add @sprig-technologies/analytics-react-native-plugin-sprig react-native-userleap
-# or
-npm install --save @sprig-technologies/analytics-react-native-plugin-sprig react-native-userleap
+npm install --save @survicate/analytics-react-native-survicate @survicate/react-native-survicate
 ```
 
-Run `pod install` after the installation to autolink the Sprig SDK.
+Using Yarn:
+```bash
+yarn add @survicate/analytics-react-native-survicate @survicate/react-native-survicate
+```
+
+### Configuring
+- Add your Survicate workspace key to `Info.plist`
+```
+	<key>Survicate</key>
+	<dict>
+		<key>WorkspaceKey</key>
+		<string>YOUR_WORKSPACE_KEY</string>
+	</dict>
+```
+- run command `pod install` in your `ios` directory
+
+### Configuring Survicate Bindings for Android
+
+- Add maven repository to your project `build.gradle` located under `android` directory
+```
+allprojects {
+    repositories {
+        // ...
+        maven { url 'https://repo.survicate.com' }
+    }
+}
+```
+- Add your Survicate workspace key to `AndroidManifest.xml`
+```java
+<application
+    android:name=".MyApp"
+>
+    <!-- ... -->
+    <meta-data android:name="com.survicate.surveys.workspaceKey" android:value="YOUR_WORKSPACE_KEY"/>
+</application>
+```
 
 ## Usage
 
-In your code where you initialize the analytics client call the `.add({ plugin })` method with an `SprigPlugin` instance. 
+Follow the [instructions for adding plugins](https://github.com/segmentio/analytics-react-native#adding-plugins) on the main Analytics client:
+
+In your code where you initialize the analytics client call the `.add(plugin)` method with an `SurvicatePlugin` instance:
 
 ```ts
-// App.js
-
 import { createClient } from '@segment/analytics-react-native';
-import { SprigPlugin } from '@sprig-technologies/analytics-react-native-plugin-sprig';
+
+import { SurvicatePlugin } from '@segment/analytics-react-native-plugin-survicate';
 
 const segmentClient = createClient({
-  writeKey: 'SEGMENT_WRITE_KEY'
+  writeKey: 'SEGMENT_KEY'
 });
 
-const plugin = new SprigPlugin();
-
-segmentClient.add({ plugin });
+segmentClient.add({ plugin: new SurvicatePlugin() });
 ```
-After this set up, any segment `track` and `identify` functionalities will also forward the events and identify the user id and attributes to Sprig respectively. The users will automatically see the survey if they are eligible without additional work. 
 
-Follow the [instructions for adding plugins](https://github.com/segmentio/analytics-react-native#adding-plugins) on the Analytics client for segment related documentations.
+### using the Survicate plugin
 
-## Example
+***identify***
 
-We included a simple react native app that implements the plugin under `./example` 
+In the SurvicateDestination plugin, the identify event from Segment is transferred to the setUserTrait method of Survicate. This is achieved within the identify function of the SurvicateDestination class. The traits and userId from the IdentifyEvent are extracted and set as user traits in Survicate using the setUserTrait method. The traits are a dictionary where each key-value pair is set as a user trait. The userId is also set as a user trait with the key "userId".
 
-## Support
+***track***
 
-Please use Github issues, Pull Requests, or feel free to reach out to our [support team](https://docs.sprig.com/docs/support).
+In the SurvicateDestination plugin, the track method from Segment is used as the invokeEvent method in Survicate. This means that when you track an event in Segment, it will be invoked in Survicate.
 
-## License
-Please see LICENSE file
+***screen***
+
+Similarly, the screen method from Segment is used as the enterScreen method in Survicate. This means that when you track a screen in Segment, it will be entered in Survicate.

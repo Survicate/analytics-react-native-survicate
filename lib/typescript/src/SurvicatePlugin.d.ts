@@ -2,7 +2,6 @@ import { DestinationPlugin, IdentifyEventType, PluginType, TrackEventType, Updat
 export declare class SurvicatePlugin extends DestinationPlugin {
     type: PluginType;
     key: string;
-    private hasInitialized;
     update(settings: SegmentAPISettings, _: UpdateType): void;
     identify(event: IdentifyEventType): IdentifyEventType;
     track(event: TrackEventType): TrackEventType;
