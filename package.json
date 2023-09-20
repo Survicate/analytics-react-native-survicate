@@ -44,7 +44,6 @@
     "@segment/analytics-react-native": "*",
     "@survicate/react-native-survicate": "^3.0.3"
   },
-  "dependencies": {},
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
