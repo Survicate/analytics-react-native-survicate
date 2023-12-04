@@ -6,7 +6,7 @@ export default (event: IdentifyEventType) => {
   const properties = event.traits;
 
   if (userId !== undefined) {
-    Survicate.setUserTrait("userId", userId);
+    Survicate.setUserTrait("user_id", userId);
   }
 
   for (const key in properties) {
