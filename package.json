@@ -1,6 +1,6 @@
 {
   "name": "@survicate/analytics-react-native-survicate",
-  "version": "3.0.0",
+  "version": "3.1.1",
   "description": "The hassle-free way to add Segment analytics Survicate plugin to your React-Native app.",
   "main": "lib/commonjs/index.js",
   "scripts": {
