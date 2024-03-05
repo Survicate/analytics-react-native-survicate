@@ -1,4 +1,5 @@
-# @segment/analytics-react-native-survicate
+# @segment/analytics-react-native-survicate ![NPM Version](https://img.shields.io/npm/v/%40survicate%2Fanalytics-react-native-survicate)
+
 
 `SurvicatePlugin` for [Survicate](https://survicate.com/). Wraps [`react-native-survicate`](https://github.com/survicate/react-native-survicate).
 
