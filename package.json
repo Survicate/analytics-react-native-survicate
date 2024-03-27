@@ -1,6 +1,6 @@
 {
   "name": "@survicate/analytics-react-native-survicate",
-  "version": "3.0.0",
+  "version": "3.1.1",
   "description": "The hassle-free way to add Segment analytics Survicate plugin to your React-Native app.",
   "main": "lib/commonjs/index.js",
   "scripts": {
@@ -42,25 +42,25 @@
   "homepage": "https://survicate.com",
   "peerDependencies": {
     "@segment/analytics-react-native": "*",
-    "@survicate/react-native-survicate": "^3.0.3"
+    "@survicate/react-native-survicate": "^3.1.1"
   },
   "devDependencies": {
-    "@segment/analytics-react-native": "^2.16.1",
-    "@semantic-release/changelog": "^6.0.1",
+    "@segment/analytics-react-native": "^2.17.0",
+    "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^8.0.4",
-    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/github": "^8.1.0",
+    "@semantic-release/npm": "^9.0.2",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "@types/jest": "^27.0.3",
-    "@types/survicate__react-native-survicate": "^1.1.0",
+    "@types/jest": "^27.5.2",
+    "@types/survicate__react-native-survicate": "^1.1.2",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "react-native-builder-bob": "^0.18.3",
     "rimraf": "^3.0.2",
-    "semantic-release": "^19.0.3",
+    "semantic-release": "^19.0.5",
     "semantic-release-monorepo": "^7.0.5",
-    "ts-jest": "^27.0.7",
-    "typescript": "^4.4.4"
+    "ts-jest": "^27.1.5",
+    "typescript": "^4.9.5"
   },
   "react-native-builder-bob": {
     "source": "src",
