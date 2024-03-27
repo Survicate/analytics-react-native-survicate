@@ -1,4 +1,5 @@
-# @segment/analytics-react-native-survicate
+# @segment/analytics-react-native-survicate ![NPM Version](https://img.shields.io/npm/v/%40survicate%2Fanalytics-react-native-survicate)
+
 
 `SurvicatePlugin` for [Survicate](https://survicate.com/). Wraps [`react-native-survicate`](https://github.com/survicate/react-native-survicate).
 
@@ -83,3 +84,13 @@ Similarly, the screen method from Segment is used as the enterScreen method in S
 ***reset***
 
 The reset method from Segment is used as the reset method in Survicate. This means that when you reset the Segment client, the Survicate client will also be reset.
+
+## Issues
+
+Got an Issue?
+
+To make things more streamlined, we’ve transitioned our issue reporting to our customer support platform. If you encounter any bugs or have feedback, please reach out to our customer support team. Your insights are invaluable to us, and we’re here to help ensure your experience is top-notch!
+
+Contact us via Intercom in the application, or drop us an email at: [hello@survicate.com]
+
+Thank you for your support and understanding!

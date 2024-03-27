@@ -1,6 +1,6 @@
 {
   "name": "@survicate/analytics-react-native-survicate",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "The hassle-free way to add Segment analytics Survicate plugin to your React-Native app.",
   "main": "lib/commonjs/index.js",
   "scripts": {
@@ -42,7 +42,7 @@
   "homepage": "https://survicate.com",
   "peerDependencies": {
     "@segment/analytics-react-native": "*",
-    "@survicate/react-native-survicate": "^3.1.1"
+    "@survicate/react-native-survicate": "^4.0.0"
   },
   "devDependencies": {
     "@segment/analytics-react-native": "^2.17.0",
@@ -52,8 +52,9 @@
     "@semantic-release/github": "^8.1.0",
     "@semantic-release/npm": "^9.0.2",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "@types/jest": "^27.5.2",
-    "@types/survicate__react-native-survicate": "^1.1.2",
+    "@survicate/react-native-survicate": "^4.1.1",
+    "@types/jest": "^27.0.3",
+    "@types/survicate__react-native-survicate": "^1.1.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "react-native-builder-bob": "^0.18.3",
     "rimraf": "^3.0.2",
