@@ -58,7 +58,7 @@ In your code where you initialize the analytics client call the `.add(plugin)` m
 ```ts
 import { createClient } from '@segment/analytics-react-native';
 
-import { SurvicatePlugin } from '@segment/analytics-react-native-plugin-survicate';
+import { SurvicatePlugin } from '@survicate/analytics-react-native-survicate';
 
 const segmentClient = createClient({
   writeKey: 'SEGMENT_KEY'
@@ -75,7 +75,7 @@ In the SurvicateDestination plugin, the identify event from Segment is transferr
 
 ***track***
 
-In the SurvicateDestination plugin, the track method from Segment is used as the invokeEvent method in Survicate. This means that when you track an event in Segment, it will be invoked in Survicate.
+In the SurvicateDestination plugin, the track method from Segment is used as the invokeEvent method in Survicate. This means that when you track an event in Segment, it will be invoked in Survicate. Moreover every String property passed in track properties argument will be passed to Survicate SDK.
 
 ***screen***
 
