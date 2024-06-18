@@ -17,16 +17,7 @@ Using Yarn:
 yarn add @survicate/analytics-react-native-survicate @survicate/react-native-survicate
 ```
 
-### Configuring
-- Add your Survicate workspace key to `Info.plist`
-```
-	<key>Survicate</key>
-	<dict>
-		<key>WorkspaceKey</key>
-		<string>YOUR_WORKSPACE_KEY</string>
-	</dict>
-```
-- run command `pod install` in your `ios` directory
+## Configuration
 
 ### Configuring Survicate Bindings for Android
 
@@ -39,17 +30,38 @@ allprojects {
     }
 }
 ```
+
+### Provide workspace key
+You can do this in 2 ways:
+
+1. Add workspace key in Segment panel -> Destinations -> Your Android app destination -> Settings. You need to put the key inside the Connection Settings as a "Workspace Key" (from plugin version 5.0.0).
+
+2. Alternatively, you can add your Survicate workspace key as a metadata inside AndroidManifest and info.plist
+
+#### Android
 - Add your Survicate workspace key to `AndroidManifest.xml`
-```java
+```xml
 <application
-    android:name=".MyApp"
->
+    android:name=".MyApp">
     <!-- ... -->
     <meta-data android:name="com.survicate.surveys.workspaceKey" android:value="YOUR_WORKSPACE_KEY"/>
 </application>
+```	
+
+#### iOS
+- Add your Survicate workspace key to `Info.plist`
 ```
+<key>Survicate</key>
+<dict>
+	<key>WorkspaceKey</key>
+	<string>YOUR_WORKSPACE_KEY</string>
+</dict>
+```
+- run command `pod install` in your `ios` directory
 
 ## Usage
+
+> **Note:** From plugin version 5.0.0 Survicate SDK is initialized upon Segment initialization. Please remove any calls to `Survicate.initializeSdk()` as it may lead to undesired behavior in cases where workspace key is set after initialization.
 
 Follow the [instructions for adding plugins](https://github.com/segmentio/analytics-react-native#adding-plugins) on the main Analytics client:
 
