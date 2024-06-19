@@ -2408,10 +2408,10 @@
     "@stdlib/utils-constructor-name" "^0.0.x"
     "@stdlib/utils-global" "^0.0.x"
 
-"@survicate/react-native-survicate@^4.1.1":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@survicate/react-native-survicate/-/react-native-survicate-4.4.0.tgz#27ea85be6c606fbedf85ecb72461f517b2934f02"
-  integrity sha512-/1CDV5+vkVegTsu3KXjov6ZFbTYsQm1eK4N9t51rqLIRklA4Qoun20PttFUBXPwh09htGf+WxDdNh32rvm+oBA==
+"@survicate/react-native-survicate@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@survicate/react-native-survicate/-/react-native-survicate-5.0.0.tgz#0fe3cfcb9821114df91596acf8049b99243fb6dd"
+  integrity sha512-ORbcwo7G6dxAYn2oka2iNabMDrKzIllvqdejIWOueOMuhOTbv9sete9j72ElO83UDhVcbPtPa0kvYPqiQa95Tg==
 
 "@tootallnate/once@2":
   version "2.0.0"
