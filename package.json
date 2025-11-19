@@ -34,7 +34,7 @@
     "package.json",
     "!src/**/*.e2e.mock.js"
   ],
-  "author": "Survicate <hello@survicate.com> (https://survicate.com/)",
+  "author": "Survicate <support@survicate.com> (https://survicate.com/)",
   "license": "MIT",
   "licenseFilename": "LICENSE",
   "bugs": {
