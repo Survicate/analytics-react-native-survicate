@@ -2,6 +2,10 @@
   "name": "@survicate/analytics-react-native-survicate",
   "version": "8.0.0",
   "description": "The hassle-free way to add Segment analytics Survicate plugin to your React-Native app.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Survicate/analytics-react-native-survicate"
+  },
   "main": "lib/commonjs/index.js",
   "scripts": {
     "build": "bob build",
