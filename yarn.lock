@@ -1894,10 +1894,10 @@
     "@stdlib/utils-constructor-name" "^0.0.x"
     "@stdlib/utils-global" "^0.0.x"
 
-"@survicate/react-native-survicate@^7.0.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@survicate/react-native-survicate/-/react-native-survicate-7.3.0.tgz#c9f585d028fe3488c73d6a90b6c4a2102d4ed5cc"
-  integrity sha512-azSWKvKjTY23Fr7AAkjGx6eznoniO9fRAS6IIMYMxdcz+hW7eL0FVzukF9HkabhPp/WZi/CfzqJtXbZv7eKKNg==
+"@survicate/react-native-survicate@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@survicate/react-native-survicate/-/react-native-survicate-8.0.0.tgz#f1b8d2925417afbf1879f6fa67b1a247f821b38a"
+  integrity sha512-GjuI5yqfo1+nZ1gGs7D5OHcEo+qa0gK29CQp5ROpLM+Ps1aEtQVJykK+kjhwir+nZX3NHdTK/NRevkBVXFpzOg==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.6"
