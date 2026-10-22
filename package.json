@@ -48,7 +48,7 @@
     "@survicate/react-native-survicate": "^9.0.0"
   },
   "devDependencies": {
-    "@segment/analytics-react-native": "^2.17.0",
+    "@segment/analytics-react-native": "^2.24.2",
     "@survicate/react-native-survicate": "^9.0.0",
     "@types/jest": "^29.5.4",
     "react-native-builder-bob": "^0.40.17",
