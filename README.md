@@ -5,6 +5,8 @@
 
 ## Installation
 
+Version 9.0.0 requires `@survicate/react-native-survicate` 9.x. Use version 8.x of this plugin with Survicate SDK 8.x.
+
 You need to install the `@survicate/analytics-react-native-survicate` and the `@survicate/react-native-survicate` dependency.
 
 Using NPM:
